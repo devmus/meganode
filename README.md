@@ -11,7 +11,7 @@ Clone this repo
 git clone https://github.com/minima-global/meganode.git
 ```
 
-There are certain values in the **docker-compose.yml** file you will want to edit
+There are certain values in the **docker-compose.yml** file you may want to edit
 
 - The MDS password for Minima
 - The admin password for MEG
