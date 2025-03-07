@@ -1,10 +1,9 @@
 #!/bin/sh
 
-#Get the currentn date
+#Get the current date
 dt=$(date '+%Y_%m_%d_%H%M%S');
 
 #FIRST DO THE MYSQL
-#Create a filename based on the time..
 filename=minima_mysql_$dt.raw.dat
 exportfile=/home/minima/backups/mysql/$filename
 
@@ -15,7 +14,6 @@ curl minima:9005/mysql+file:$exportfile+action:rawexport
 find /home/minima/backups/mysql/ -type f -mtime +21 -delete
 
 #NOW DO THE MEGAMMR
-#Create a filename based on the time..
 filenamemmr=minima_megammr_$dt.mmr
 exportfilemmr=/home/minima/backups/megammr/$filenamemmr
 
