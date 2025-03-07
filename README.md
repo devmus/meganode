@@ -27,9 +27,9 @@ And thats it.. you will now have a MegaMMR Minima node that is backed by a MySQL
 
 MEG will be running - and all the plumbing is set up auto-magically so that MEG and Minima can talk to each other
 
-The Minima data folder is /data 
+The Minima data folder is **data** 
 
-A daily backup of your MegaMMMR and MySQL database is put in backups 
+A daily backup of your MegaMMR and MySQL database is put in **backups** 
 
 ### Historical Data
 
@@ -37,5 +37,11 @@ This setup will record all data / TxPoW from the moment you start it
 
 If you wish to load ALL old data you will need to :
 
-- Copy a ..raw.dat backup into the data folder
+- Copy a ..raw.dat backup into the data folder (you can find one on spartacusrex.com)
+- Open Terminal on MDS
+- run 
+```
+mysql action:rawimport file:..thefile
+```
 
+You will now have a complete system with ALL data.
