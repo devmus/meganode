@@ -17,6 +17,8 @@ There are certain values in the **docker-compose.yml** file you will want to edi
 - The admin password for MEG
 - Do you want to change the ports
 
+You can change any parameters you want here - just add / remove them as environment variables 
+
 Once you have set those up run
 
 ```
@@ -37,9 +39,10 @@ This setup will record all data / TxPoW from the moment you start it
 
 If you wish to load ALL old data you will need to :
 
-- Copy a ..raw.dat backup into the data folder (you can find one on spartacusrex.com)
+- Copy a ..raw.dat backup into the data folder (you can find one on [spartacusrex.com](https://spartacusrex.com))
 - Open Terminal on MDS
 - run 
+
 ```
 mysql action:rawimport file:..thefile
 ```

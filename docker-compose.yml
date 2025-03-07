@@ -11,7 +11,9 @@ services:
     mysql:
         image: mysql:8.4
         environment:
+            #You can change the root password
             MYSQL_ROOT_PASSWORD: 'rootpassword'
+            #You can leave these.. ONLY change these if you ALSO change the login details below
             MYSQL_USER: 'minimauser'
             MYSQL_PASSWORD: 'minimapassword'
             MYSQL_DATABASE: 'minimadb'
@@ -26,13 +28,15 @@ services:
         stop_grace_period: 60s
         restart: unless-stopped
         environment:
+            #Main MDS password
+            minima_mdspassword: "123"
             #If you are running on Desktop / no external IP enable this setting
             #minima_desktop: true
             #You must have rpc enabled so MEG can communicate - do NOT open port 9005
             minima_rpcenable: "true"
-            minima_solo: "true"
+            #I use solo to test / debug
+            #minima_solo: "true"
             #MDS is ENABLED by default in the container so you MUST set your MDS password to something good..
-            minima_mdspassword: "123"
             minima_megammr: "true"
             #MySQL login profiles:
             minima_mysqldb: "minimauser:minimapassword@mysql:3306/minimadb"
