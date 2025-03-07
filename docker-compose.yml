@@ -30,6 +30,10 @@ services:
         environment:
             #Main MDS password
             minima_mdspassword: "123"
+
+            #Initial PEERS - you can edit this or use the default
+            minima_p2pnodes: "https://spartacusrex.com/minimapeers.txt"
+
             #If you are running on Desktop / no external IP enable this setting
             #minima_desktop: true
             #You must have rpc enabled so MEG can communicate - do NOT open port 9005

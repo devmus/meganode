@@ -16,8 +16,9 @@ There are certain values in the **docker-compose.yml** file you will want to edi
 - The MDS password for Minima
 - The admin password for MEG
 - Do you want to change the ports
+- The initial peers to connect to can be set up later or directly from the params passed to Minima
 
-You can change any parameters you want here - just add / remove them as environment variables 
+You can of course change _any_ parameters you want - just add / remove them as environment variables 
 
 Once you have set those up run
 
