@@ -34,7 +34,7 @@ The Minima data folder is **data**
 
 A daily backup of your MegaMMR and MySQL database is put in **backups** 
 
-Startup takes about 30 seconds.. before you can login to MDS or use MEG
+Startup takes about ~20 seconds.. before you can login to MDS or use MEG
 
 This is because Minima waits for the MySQL DB to initialise fully
 
