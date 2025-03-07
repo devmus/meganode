@@ -51,7 +51,7 @@ If you wish to load ALL old data you will need to :
 - run 
 
 ```
-mysql action:rawimport file:..thefile
+mysql action:rawimport file:theRawDatfile.raw.dat
 ```
 
 You will now have a complete system with ALL data.
