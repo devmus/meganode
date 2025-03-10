@@ -19,8 +19,8 @@ services:
             MYSQL_DATABASE: 'minimadb'
         restart: unless-stopped
         #You can access the MySQL db if you want by opening the port
-        #ports:
-            #- 3306:3306
+        ports:
+            - 3310:3306
 
     #Minima Node
     minima:
