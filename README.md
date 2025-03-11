@@ -1,7 +1,7 @@
 # meganode
 MySQL backed Minima node with MEG as a multi-container docker image 
 
-Public MDS is also enabled by default - can be accessed at https://127.0.0.1:9003/public/
+Public MDS is also enabled by default and can be accessed in the usual way at https://127.0.0.1:9003/public/
 
 ### Installation
 
