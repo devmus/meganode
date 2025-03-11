@@ -1,6 +1,8 @@
 # meganode
 MySQL backed Minima node with MEG as a multi-container docker image 
 
+Public MDS is also enabled by default - can be accessed at https://127.0.0.1:9003/public/
+
 ### Installation
 
 You must have docker installed.
@@ -15,7 +17,7 @@ There are certain values in the **docker-compose.yml** file you may want to edit
 
 - The MDS password for Minima
 - The admin password for MEG
-- Do you want to change the ports
+- The Minima / MEG / MySQL ports and if they should be exposed
 - The initial peers to connect to can be set up later or directly from the params passed to Minima
 
 You can of course change _any_ parameters you want - just add / remove them as environment variables 
@@ -30,15 +32,13 @@ And thats it.. you will now have a MegaMMR Minima node that is backed by a MySQL
 
 MEG will be running - and all the plumbing is set up auto-magically so that MEG and Minima can talk to each other
 
-The Minima data folder is **data** 
+The Minima data folder is mappedf to the local **data** folder 
 
 A daily backup of your MegaMMR and MySQL database is put in **backups** 
 
 Startup takes about ~20 seconds.. before you can login to MDS or use MEG
 
-This is because Minima waits for the MySQL DB to initialise fully
-
-Then MEG waits for Minima.. 
+This is because Minima waits for the MySQL DB to initialise fully - then MEG waits for Minima.. 
 
 ### Historical Data
 
