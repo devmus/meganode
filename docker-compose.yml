@@ -38,6 +38,8 @@ services:
             #minima_desktop: true
             #You must have rpc enabled so MEG can communicate - do NOT open port 9005
             minima_rpcenable: "true"
+            #Enable the Public MDS
+            minima_publicmds: "true"
             #I use solo to test / debug
             #minima_solo: "true"
             #MDS is ENABLED by default in the container so you MUST set your MDS password to something good..
