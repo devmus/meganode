@@ -32,13 +32,11 @@ And thats it.. you will now have a MegaMMR Minima node that is backed by a MySQL
 
 MEG will be running - and all the plumbing is set up auto-magically so that MEG and Minima can talk to each other
 
-The Minima data folder is mappedf to the local **data** folder 
+Startup takes about ~30 seconds.. before you can login to MDS or use MEG - as they both wait for mysql and each other to start
 
-A daily backup of your MegaMMR and MySQL database is put in **backups** 
+The Minima data folder is mapped to the local **data** folder 
 
-Startup takes about ~20 seconds.. before you can login to MDS or use MEG
-
-This is because Minima waits for the MySQL DB to initialise fully - then MEG waits for Minima.. 
+A daily backup of your MegaMMR and MySQL database is put in **backups**  
 
 ### MegaMMR
 
@@ -65,7 +63,7 @@ If you wish to load ALL old TxBlock data aswell - you will need to :
 - run 
 
 ```
-mysql action:reset file:theRawDatfile.raw.dat
+mysql action:reset file:minima_archive_date.raw.dat
 ```
 
 This will do a mysql rawimport and then a resync in one go..  
