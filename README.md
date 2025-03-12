@@ -60,7 +60,7 @@ This setup will record all data / TxPoW from the moment you start it
 
 If you wish to load ALL old TxBlock data aswell - you will need to :
 
-- Copy a ..raw.dat backup into the data folder (you can find one on [spartacusrex.com](https://spartacusrex.com))
+- Copy a ..raw.dat backup into the data folder ( find one on [spartacusrex.com](https://spartacusrex.com) )
 - Open Terminal on MDS
 - run 
 
