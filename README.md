@@ -54,4 +54,8 @@ If you wish to load ALL old data you will need to :
 mysql action:reset file:theRawDatfile.raw.dat
 ```
 
+This will do a mysql rawimport and then a resync in one go..  
+
+This process will take a long time.. you can see the how far by looking either at the Minima logs in docker or turn logs on in Terminal. 
+
 You will now have a complete system with ALL data.
