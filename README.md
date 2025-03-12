@@ -40,11 +40,25 @@ Startup takes about ~20 seconds.. before you can login to MDS or use MEG
 
 This is because Minima waits for the MySQL DB to initialise fully - then MEG waits for Minima.. 
 
+### MegaMMR
+
+If you wish to have ALL the coin proofs ( you run a public wallet or are an exchange ) it is very fast and easy to import the coin data.
+
+Copy a megammr file into the data folder ( find one on [spartacusrex.com](https://spartacusrex.com) )
+
+Open Terminal in MDS and run :
+
+```
+megammr action:import file:minima_megammr_date.mmr
+```
+
+You will now have a complete Minima node with all coin proofs.
+
 ### Historical Data
 
 This setup will record all data / TxPoW from the moment you start it
 
-If you wish to load ALL old data you will need to :
+If you wish to load ALL old TxBlock data aswell - you will need to :
 
 - Copy a ..raw.dat backup into the data folder (you can find one on [spartacusrex.com](https://spartacusrex.com))
 - Open Terminal on MDS
@@ -56,6 +70,6 @@ mysql action:reset file:theRawDatfile.raw.dat
 
 This will do a mysql rawimport and then a resync in one go..  
 
-This process will take a long time.. you can see the how far by looking either at the Minima logs in docker or turn logs on in Terminal. 
+This process will take a long time.. hours.. you can see the how far by looking either at the Minima logs in docker or turn logs on in Terminal. 
 
 You will now have a complete system with ALL data.
