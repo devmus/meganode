@@ -43,6 +43,7 @@ services:
       minima_rpcenable: "true"
       #Enable the Public MDS
       #minima_publicmds: "true"
+      minima_mdsenable: "false"
       #I use solo to test / debug
       #minima_solo: "true"
       #MDS is ENABLED by default in the container so you MUST set your MDS password to something good..
